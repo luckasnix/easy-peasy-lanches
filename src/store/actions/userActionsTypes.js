@@ -1,0 +1,2 @@
+export const INSERT_USER_DATA = 'INSERT_USER_DATA'
+export const DELETE_USER_DATA = 'DELETE_USER_DATA'
