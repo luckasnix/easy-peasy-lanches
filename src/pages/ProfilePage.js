@@ -12,7 +12,7 @@ function ProfilePage() {
 			return state.userData
 		}
 	)
-	const [userName, setUserName] = useState(userData.user.displayName ? userData.user.displayName : '')
+	const [userName, setUserName] = useState(userData.displayName ? userData.displayName : '')
 	const handleUserName = useCallback(
 		(evt) => {
 			setUserName(evt.target.value)

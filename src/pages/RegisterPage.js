@@ -1,22 +1,23 @@
 import React, { useState, useCallback } from 'react'
+import { useDispatch } from 'react-redux'
 import firebase from 'firebase/app'
 import 'firebase/auth'
 import { Page, Header } from '../components/PageComponents'
-import { Form, TextInput, EmailInput, PasswordInput, FormSubmit } from '../components/FormComponents'
+import { Form, EmailInput, PasswordInput, FormSubmit } from '../components/FormComponents'
 import { AuthLink } from '../components/NavBarComponents'
+import * as Actions from '../store/actions/userActions'
 
 function RegisterPage(props) {
-	// LOCAL STATE
-	const [userName, setUserName] = useState('')
+	const dispatch = useDispatch()
+	const insertUserData = useCallback(
+		(userData) => {
+			dispatch(Actions.insertUserData(userData))
+		},
+		[dispatch]
+	)
 	const [userEmail, setUserEmail] = useState('')
 	const [userPassword, setUserPassword] = useState('')
 	const [userPasswordConfirmation, setUserPasswordConfirmation] = useState('')
-	const handleUserName = useCallback(
-		(evt) => {
-			setUserName(evt.target.value)
-		},
-		[]
-	)
 	const handleUserEmail = useCallback(
 		(evt) => {
 			setUserEmail(evt.target.value)
@@ -35,21 +36,12 @@ function RegisterPage(props) {
 		},
 		[]
 	)
-	// CALLBACK FUNCTIONS
 	const register = useCallback(
 		(evt) => {
 			evt.preventDefault()
 			firebase
 				.auth()
 				.createUserWithEmailAndPassword(userEmail, userPassword)
-				.then(
-					() => {
-						firebase.auth().currentUser.updateProfile({
-							displayName: userName
-						})
-						props.history.replace('/login')
-					}
-				)
 				.catch(
 					(err) => {
 						console.log(err.code)
@@ -63,14 +55,20 @@ function RegisterPage(props) {
 					}
 				)
 		},
-		[props.history, userName, userEmail, setUserEmail, userPassword, setUserPassword]
+		[userEmail, setUserEmail, userPassword, setUserPassword]
 	)
-	// PAGE COMPONENTS
+	firebase.auth().onAuthStateChanged(
+		(user) => {
+			if(user) {
+				insertUserData(user)
+				props.history.replace('/home')
+			}
+		}
+	)
 	return (
 		<Page>
 			<Header/>
 			<Form>
-				<TextInput placeholder='Digite o seu nome' value={userName} onChange={handleUserName}/>
 				<EmailInput placeholder='Digite o seu email' value={userEmail} onChange={handleUserEmail}/>
 				<PasswordInput placeholder='Digite a sua senha' value={userPassword} onChange={handleUserPassword}/>
 				<PasswordInput placeholder='Confirme a sua senha' value={userPasswordConfirmation} onChange={handleUserPasswordConfirmation}/>

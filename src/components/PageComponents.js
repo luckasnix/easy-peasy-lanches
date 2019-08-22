@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
-import pizzaLogo from '../images/pizza-logo.svg'
+import { MediumLogo } from './LogoComponents'
 
 const StyledPage = styled.div`
   width: 100vw;
@@ -60,7 +60,7 @@ export function Header() {
   return (
     <StyledHeader>
       <NavLink to='/'>
-        <img src={pizzaLogo} alt='Logomarca da empresa'/>
+        <MediumLogo/>
       </NavLink>
     </StyledHeader>
   )

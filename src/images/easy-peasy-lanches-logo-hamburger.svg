@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
+  <g transform="matrix(1 0 0 .99572 -7.71 37.1)">
+    <rect transform="rotate(35.2)" ry="1.21" y="13.89" x="45.72" height="2.43" width="10" fill="#fad390"/>
+    <path d="M7.73 63.18a100 100 0 0 1-.02-.43 100 100 0 0 1 100-100 100 100 0 0 1 100 100 100 100 0 0 1-.02.43z" fill="#e67e22"/>
+    <rect transform="rotate(27.45)" ry="1.21" y="-12.49" x="48.4" height="2.43" width="10" fill="#fad390"/>
+    <rect transform="rotate(44.16)" ry="1.21" y="-61.8" x="42.3" height="2.43" width="10" fill="#fad390"/>
+    <rect transform="rotate(-16.12)" ry="1.21" y="8.87" x="47.48" height="2.43" width="10" fill="#fad390"/>
+    <rect transform="rotate(-61.27)" ry="1.21" y="73.26" x="21.35" height="2.43" width="10" fill="#fad390"/>
+    <rect transform="rotate(50.73)" ry="1.21" y="-5.87" x="34.63" height="2.43" width="10" fill="#fad390"/>
+    <rect transform="rotate(162.87)" ry="1.21" y="-55.98" x="-7.71" height="2.43" width="10" fill="#fad390"/>
+    <rect transform="rotate(-46.8)" ry="1.21" y="71.54" x="-11.55" height="2.43" width="10" fill="#fad390"/>
+    <rect transform="rotate(35.2)" ry="1.21" y="-8.46" x="69.88" height="2.43" width="10" fill="#fad390"/>
+    <rect transform="rotate(-40.9)" ry="1.21" y="94.24" x="31.38" height="2.43" width="10" fill="#fad390"/>
+    <rect transform="rotate(30.54)" ry="1.21" y="-57.72" x="146.53" height="2.43" width="10" fill="#fad390"/>
+    <rect transform="rotate(-45.49)" ry="1.21" y="76.72" x="75.66" height="2.43" width="10" fill="#fad390"/>
+    <rect transform="rotate(78.75)" ry="1.21" y="-134.06" x="34.85" height="2.43" width="10" fill="#fad390"/>
+    <rect transform="rotate(50.52)" ry="1.21" y="-127.9" x="83.46" height="2.43" width="10" fill="#fad390"/>
+    <rect transform="rotate(92.18)" ry="1.21" y="-184.17" x="9.42" height="2.43" width="10" fill="#fad390"/>
+    <rect transform="rotate(114.75)" ry="1.21" y="-155.05" x="-77.18" height="2.43" width="10" fill="#fad390"/>
+    <rect transform="rotate(35.2)" ry="1.21" y="-45.42" x="91.35" height="2.43" width="10" fill="#fad390"/>
+    <rect transform="rotate(160.05)" ry="1.21" y="-80.47" x="-103.79" height="2.43" width="10" fill="#fad390"/>
+    <rect transform="rotate(107.49)" ry="1.21" y="-152.3" x="2.8" height="2.43" width="10" fill="#fad390"/>
+    <rect transform="rotate(151.95)" ry="1.21" y="-44.85" x="-130.69" height="2.43" width="10" fill="#fad390"/>
+    <rect transform="rotate(55.82)" ry="1.21" y="-102.53" x="29.16" height="2.43" width="10" fill="#fad390"/>
+    <rect transform="rotate(56.1)" ry="1.21" y="-134.69" x="145.83" height="2.43" width="10" fill="#fad390"/>
+  </g>
+</svg>

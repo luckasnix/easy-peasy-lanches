@@ -1,6 +1,7 @@
 import React from 'react'
-import { Page } from '../components/PageComponents'
+import { Page, Main } from '../components/PageComponents'
 import { PublicSideNavBar } from '../components/NavBarComponents'
+import { LargeLogo } from '../components/LogoComponents'
 import registerIcon from '../images/register-icon.svg'
 import logInIcon from '../images/log-in-icon.svg'
 
@@ -15,6 +16,9 @@ function MainPage() {
 					]
 				}
 			/>
+			<Main>
+				<LargeLogo/>
+			</Main>
 		</Page>
 	)
 }

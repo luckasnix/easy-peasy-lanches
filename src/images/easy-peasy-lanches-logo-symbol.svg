@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <g transform="matrix(.9999 0 0 .9978 -7.7 37.17)" class="hamburger">
+    <rect width="10" height="2.43" x="45.72" y="13.89" ry="1.21" transform="rotate(35.2)" fill="#fad390"/>
+    <path d="M7.73 63.18a100 100 0 0 1-.02-.43 100 100 0 0 1 100-100 100 100 0 0 1 100 100 100 100 0 0 1-.02.43z" fill="#e67e22"/>
+    <rect width="10" height="2.43" x="48.4" y="-12.49" ry="1.21" transform="rotate(27.45)" fill="#fad390"/>
+    <rect width="10" height="2.43" x="42.3" y="-61.8" ry="1.21" transform="rotate(44.16)" fill="#fad390"/>
+    <rect width="10" height="2.43" x="47.48" y="8.87" ry="1.21" transform="rotate(-16.12)" fill="#fad390"/>
+    <rect width="10" height="2.43" x="21.35" y="73.26" ry="1.21" transform="rotate(-61.27)" fill="#fad390"/>
+    <rect width="10" height="2.43" x="34.63" y="-5.87" ry="1.21" transform="rotate(50.73)" fill="#fad390"/>
+    <rect width="10" height="2.43" x="-7.71" y="-55.98" ry="1.21" transform="rotate(162.87)" fill="#fad390"/>
+    <rect width="10" height="2.43" x="-11.55" y="71.54" ry="1.21" transform="rotate(-46.8)" fill="#fad390"/>
+    <rect width="10" height="2.43" x="69.88" y="-8.46" ry="1.21" transform="rotate(35.2)" fill="#fad390"/>
+    <rect width="10" height="2.43" x="31.38" y="94.24" ry="1.21" transform="rotate(-40.9)" fill="#fad390"/>
+    <rect width="10" height="2.43" x="146.53" y="-57.72" ry="1.21" transform="rotate(30.54)" fill="#fad390"/>
+    <rect width="10" height="2.43" x="75.66" y="76.72" ry="1.21" transform="rotate(-45.49)" fill="#fad390"/>
+    <rect width="10" height="2.43" x="34.85" y="-134.06" ry="1.21" transform="rotate(78.75)" fill="#fad390"/>
+    <rect width="10" height="2.43" x="83.46" y="-127.9" ry="1.21" transform="rotate(50.52)" fill="#fad390"/>
+    <rect width="10" height="2.43" x="9.42" y="-184.17" ry="1.21" transform="rotate(92.18)" fill="#fad390"/>
+    <rect width="10" height="2.43" x="-77.18" y="-155.05" ry="1.21" transform="rotate(114.75)" fill="#fad390"/>
+    <rect width="10" height="2.43" x="91.35" y="-45.42" ry="1.21" transform="rotate(35.2)" fill="#fad390"/>
+    <rect width="10" height="2.43" x="-103.79" y="-80.47" ry="1.21" transform="rotate(160.05)" fill="#fad390"/>
+    <rect width="10" height="2.43" x="2.8" y="-152.3" ry="1.21" transform="rotate(107.49)" fill="#fad390"/>
+    <rect width="10" height="2.43" x="-130.69" y="-44.85" ry="1.21" transform="rotate(151.95)" fill="#fad390"/>
+    <rect width="10" height="2.43" x="29.16" y="-102.53" ry="1.21" transform="rotate(55.82)" fill="#fad390"/>
+    <rect width="10" height="2.43" x="145.83" y="-134.69" ry="1.21" transform="rotate(56.1)" fill="#fad390"/>
+  </g>
+  <g transform="matrix(.9999 0 0 .9979 -4.65 -63.23)" class="pizza">
+    <path d="M4.7 163.36a100 100 0 0 0-.03.42 100 100 0 0 0 100 100 100 100 0 0 0 100-100 100 100 0 0 0-.01-.42z" fill="#e67e22"/>
+    <path d="M17.2 163.36a87.5 87.5 0 0 0-.03.37 87.5 87.5 0 0 0 87.5 87.5 87.5 87.5 0 0 0 87.5-87.5 87.5 87.5 0 0 0-.01-.37z" fill="#fad390"/>
+    <circle cx="50.71" cy="180.08" r="10" fill="#e84118"/>
+    <circle cx="63.27" cy="207.24" r="10" fill="#e84118"/>
+    <circle cx="94.91" cy="182.04" r="10" fill="#e84118"/>
+    <circle cx="133.07" cy="193.38" r="10" fill="#e84118"/>
+    <circle cx="107.41" cy="228.33" r="10" fill="#e84118"/>
+    <circle cx="141.75" cy="218.52" r="10" fill="#e84118"/>
+    <circle cx="174.12" cy="178.31" r="10" fill="#e84118"/>
+  </g>
+</svg>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import styled from 'styled-components'
-import pizzaLogo from '../images/pizza-logo.svg'
+import { SmallLogo } from './LogoComponents'
 
 const StyledSideNavBar = styled.nav`
   position: fixed;
@@ -47,7 +47,7 @@ export function SideNavBarLogo() {
   return (
     <StyledSideNavBarLogo>
       <NavLink to='/home'>
-        <img src={pizzaLogo} alt='Logomarca da empresa'/>
+        <SmallLogo/>
       </NavLink>
     </StyledSideNavBarLogo>
   )

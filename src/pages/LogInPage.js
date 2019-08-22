@@ -8,7 +8,6 @@ import { AuthLink } from '../components/NavBarComponents'
 import * as Actions from '../store/actions/userActions'
 
 function LogInPage(props) {
-	// STORE AND DISPATCHES
 	const dispatch = useDispatch()
 	const insertUserData = useCallback(
 		(userData) => {
@@ -16,7 +15,6 @@ function LogInPage(props) {
 		},
 		[dispatch]
 	)
-	// LOCAL STATE
 	const [userEmail, setUserEmail] = useState('')
 	const [userPassword, setUserPassword] = useState('')
 	const handleUserEmail = useCallback(
@@ -31,19 +29,12 @@ function LogInPage(props) {
 		},
 		[]
 	)
-	// CALLBACK FUNCTIONS
 	const logIn = useCallback(
 		(evt) => {
 			evt.preventDefault()
 			firebase
 				.auth()
 				.signInWithEmailAndPassword(userEmail, userPassword)
-				.then(
-					(res) => {
-						insertUserData(res)
-						props.history.replace('/home')
-					}
-				)
 				.catch(
 					(err) => {
 						console.log(err.code)
@@ -57,9 +48,16 @@ function LogInPage(props) {
 					}
 				)
 		},
-		[props.history, userEmail, setUserEmail, userPassword, setUserPassword, insertUserData]
+		[userEmail, setUserEmail, userPassword, setUserPassword]
 	)
-	// PAGE COMPONENTS
+	firebase.auth().onAuthStateChanged(
+		(user) => {
+			if(user) {
+				insertUserData(user)
+				props.history.replace('/home')
+			}
+		}
+	)
 	return (
 		<Page>
 			<Header/>
